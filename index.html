@@ -1,0 +1,283 @@
+<html>
+  <head>
+	
+    <style type="text/css"> 
+/*
+      UNIR
+      MATERIA:  COMPUTACION EN EL SERVIDOR WEB
+      TRABAJO:  DESARROLLO WEB AVANZADO
+      ALUMNO:   FELIPE TREJO GARCIA
+      PROFESOR: MAESTRO OCTAVIO AGUIRRE LOZANO
+
+*/
+/* 
+	Estilo para definir el ancho y margenes de una etiqueta DIV
+	https://uniwebsidad.com/libros/css/capitulo-12/centrar-una-pagina-horizontalmente
+*/
+	
+ /* Centra la pagina */	
+  #contenedor 
+	{
+    text-align: center;
+	}
+ /* Edita las propiedades del boton submit */	  
+    input[type=submit] {
+      background-color:red;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    </style>
+    </head>
+<body>
+<div id="contenedor">
+<!-- Inicia formulario, con metodo de transmision post-->
+<form action="formpost.php" method="post">
+<!-- Encabezado con letras rojas-->
+<h1 style="color:red;">Old School Code Configurator</h1>
+<pre style="font-size:160%;"><!--Texto con fuente 160% -->
+  Interfaz grafica para generar
+  codigo Pic16F887
+  <hr>
+ - Seleccione I, para Entrada Digital  
+ - Seleccione O, para Salida Digital   
+ - Seleccione A, para entrada Analogica
+</pre>
+<hr> <!-- Insercion de linea horizontal -->
+<br><br>Puerto A<br><br>
+<!-- Seccion de creacion de combo boxes, desde RA7 hasta RE0 -->
+RA7:
+<select name="RA7" id="RA7">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RA6:
+<select name="RA6" id="RA6">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RA5:
+<select name="RA5" id="RA5">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A4">A</option>
+</select>
+RA4:
+<select name="RA4" id="RA4">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RA3:
+<select name="RA3" id="RA3">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A3">A</option>
+</select>
+RA2:
+<select name="RA2" id="RA2">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A2">A</option>
+</select>
+RA1:
+<select name="RA1" id="RA1">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A1">A</option>
+</select>
+RA0:
+<select name="RA0" id="RA0">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A0">A</option>
+</select>
+
+<br><br>Puerto B<br><br>
+RB7:
+<select name="RB7" id="RB7">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RB6:
+<select name="RB6" id="RB6">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RB5:
+<select name="RB5" id="RB5">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A13">A</option>
+</select>
+RB4:
+<select name="RB4" id="RB4">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A11">A</option>
+</select>
+RB3:
+<select name="RB3" id="RB3">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A9">A</option>
+</select>
+RB2:
+<select name="RB2" id="RB2">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A8">A</option>
+</select>
+RB1:
+<select name="RB1" id="RB1">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A10">A</option>
+</select>
+RB0:
+<select name="RB0" id="RB0">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A12">A</option>
+</select>
+
+<br><br>Puerto C<br><br>
+RC7:
+<select name="RC7" id="RC7">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RC6:
+<select name="RC6" id="RC6">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RC5:
+<select name="RC5" id="RC5">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RC4:
+<select name="RC4" id="RC4">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RC3:
+<select name="RC3" id="RC3">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RC2:
+<select name="RC2" id="RC2">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RC1:
+<select name="RC1" id="RC1">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RC0:
+<select name="RC0" id="RC0">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+
+<br><br>Puerto D<br><br>
+RD7:
+<select name="RD7" id="RD7">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RD6:
+<select name="RD6" id="RD6">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RD5:
+<select name="RD5" id="RD5">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RD4:
+<select name="RD4" id="RD4">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RD3:
+<select name="RD3" id="RD3">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RD2:
+<select name="RD2" id="RD2">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RD1:
+<select name="RD1" id="RD1">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RD0:
+<select name="RD0" id="RD0">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+
+<br><br>Puerto E<br><br>
+RE7:
+<select name="RE7" id="RE7">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RE6:
+<select name="RE6" id="RE6">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RE5:
+<select name="RE5" id="RE5">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RE4:
+<select name="RE4" id="RE4">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RE3:
+<select name="RE3" id="RE3">
+  <option value="I">I</option>
+  <option value="O">O</option>
+</select>
+RE2:
+<select name="RE2" id="RE2">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A7">A</option>
+</select>
+RE1:
+<select name="RE1" id="RE1">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A6">A</option>
+</select>
+RE0:
+<select name="RE0" id="RE0">
+  <option value="I">I</option>
+  <option value="O">O</option>
+  <option value="A5">A</option>
+</select>
+
+
+<br><br>
+<br><br>
+<!-- Creacion de boton "GENERAR CODIGO" -->
+<input type="submit" value="GENERAR CODIGO">
+</form>
+</div>
+</body>
+</html>
