@@ -1,6 +1,5 @@
 <html>
-  <head>
-	
+  <head>	
     <style type="text/css"> 
 /*
       UNIR
@@ -19,6 +18,8 @@
   #contenedor 
 	{
     text-align: center;
+    padding-bottom: 0%;
+    padding-top: 0%;
 	}
  /* Edita las propiedades del boton submit */	  
     input[type=submit] {
@@ -34,20 +35,19 @@
     </head>
 <body>
 <div id="contenedor">
-<!-- Inicia formulario, con metodo de transmision post-->
+<!-- Inicia formulario, con metodo de transmision post-->    
 <form action="formpost.php" method="post">
 <!-- Encabezado con letras rojas-->
-<h1 style="color:red;">Old School Code Configurator</h1>
-<pre style="font-size:160%;"><!--Texto con fuente 160% -->
-  Interfaz grafica para generar
-  codigo Pic16F887
-  <hr>
+<h1 style="color:red; font-family: Arial;">Old School Code Configurator</h1>
+<h3 Style="font-family: Arial;"> Interfaz grafica para generar codigo PIC16F887</h3>
+<hr Style="margin-bottom: 0%; margin-top: 0%;"> <!-- Insercion de linea horizontal --> 
+<pre style="font-size:160%; margin-bottom: 0%; margin-top: 0%;"><!--Texto con fuente 160% -->
  - Seleccione I, para Entrada Digital  
  - Seleccione O, para Salida Digital   
  - Seleccione A, para entrada Analogica
 </pre>
-<hr> <!-- Insercion de linea horizontal -->
-<br><br>Puerto A<br><br>
+<hr Style="margin-bottom: 0%; "> <!-- Insercion de linea horizontal --> 
+Puerto A<br><br>
 <!-- Seccion de creacion de combo boxes, desde RA7 hasta RE0 -->
 RA7:
 <select name="RA7" id="RA7">
@@ -273,7 +273,6 @@ RE0:
 </select>
 
 
-<br><br>
 <br><br>
 <!-- Creacion de boton "GENERAR CODIGO" -->
 <input type="submit" value="GENERAR CODIGO">

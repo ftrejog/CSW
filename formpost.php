@@ -101,7 +101,7 @@ class Renglon
 
 }
 
-// funcion confuguracion de puertos de entreda/salida
+// funcion confuguracion de puertos de entrada/salida
 // convierte un arreglo string en un arreglo numericos de "1"s y "0"s
 function get_trisx($AX){
 	for($i = 0; $i <8; $i++){
@@ -129,8 +129,7 @@ function CalcPort($AX){
 // https://www.w3schools.com/php/php_looping_while.asp
 function CalcAdcl($AX){
     $adc =0;
-    //for($i = 0; $i <8; $i++){
-    $i = 0;
+     $i = 0;
     while ($i < 8){   
         switch($AX[$i]){
             case "A0":
@@ -163,7 +162,7 @@ function CalcAdcl($AX){
     return $adc;
 }
 
-// funcion calculo registor ADC high
+// funcion calculo registro ADC high
 // convierte las entradas elegidas como analogicas (A8..A13) a un valor adc high
 function CalcAdch($AX){
     $adc =0;
